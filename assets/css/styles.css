@@ -111,6 +111,11 @@ body {
   color: var(--primary);
 }
 
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
 /* Dropdown */
 
 .nav-dropdown {
@@ -128,6 +133,11 @@ body {
   gap: 4px;
   color: var(--text-main);
   font-weight: 500;
+
+  /* FIX ALIGNMENT */
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .dropdown-toggle:hover {
