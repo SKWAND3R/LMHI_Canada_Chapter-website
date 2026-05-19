@@ -28,6 +28,27 @@ body {
   background-color: #ffffff;
 }
 
+/* Top utility bar */
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 6px 40px;
+  background: #f0f3f7;
+  font-size: 0.85rem;
+}
+
+.top-link {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-link:hover {
+  text-decoration: underline;
+}
+
 /* Main navigation */
 
 .main-nav {
@@ -48,19 +69,7 @@ body {
   gap: 12px;
 }
 
-.logo-circle {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--primary);
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
+/* REAL LOGO SUPPORT */
 .logo-image img {
   height: 48px;
   width: auto;
