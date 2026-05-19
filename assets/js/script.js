@@ -16,3 +16,11 @@ function rotateSlides() {
 }
 
 setInterval(rotateSlides, 5000); // 5 seconds per slide
+
+// About Us Dropdown Toggle
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    toggle.parentElement.classList.toggle('open');
+  });
+});
+
