@@ -164,7 +164,12 @@ body {
   background: var(--light-bg);
 }
 
-.nav-dropdown:hover .dropdown-menu {
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.nav-dropdown.open .dropdown-menu {
   display: block;
 }
 
