@@ -243,6 +243,10 @@ body {
   transform: translateY(-1px);
 }
 
+.hero-content {
+  padding-bottom: 40px;
+}
+
 /* Highlights */
 
 .highlights {
