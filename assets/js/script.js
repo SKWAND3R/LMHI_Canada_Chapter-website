@@ -4,3 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
+// Toronto Skyline Slider
+let currentSlide = 0;
+const slides = document.querySelectorAll(".hero-slider .slide");
+
+function rotateSlides() {
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add("active");
+}
+
+setInterval(rotateSlides, 5000); // 5 seconds per slide
