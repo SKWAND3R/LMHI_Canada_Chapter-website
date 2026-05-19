@@ -61,6 +61,12 @@ body {
   letter-spacing: 1px;
 }
 
+.logo-image img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 .logo-text {
   display: flex;
   flex-direction: column;
