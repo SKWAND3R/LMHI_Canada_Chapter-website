@@ -58,7 +58,7 @@ body {
   padding: 12px 40px;
   border-bottom: 1px solid #e1e4ea;
   background: #ffffff;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 20;
 }
