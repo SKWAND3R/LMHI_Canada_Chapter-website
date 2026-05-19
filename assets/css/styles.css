@@ -206,11 +206,15 @@ body {
   position: relative;
   z-index: 3;
   max-width: var(--max-width);
-  padding: 0 40px;
+  padding: 0 40px 40px 40px; /* bottom padding included */
   color: white;
   text-align: left;
-  top: 50%;
-  transform: translateY(-50%);
+
+  /* FIXED SPACING */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .hero-content h1 {
@@ -241,10 +245,6 @@ body {
 .hero-button:hover {
   background: #ffb63a;
   transform: translateY(-1px);
-}
-
-.hero-content {
-  padding-bottom: 40px;
 }
 
 /* Highlights */
