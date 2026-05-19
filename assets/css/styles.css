@@ -115,6 +115,7 @@ body {
 
 .nav-dropdown {
   position: relative;
+  padding-bottom: 10px; /* prevents flicker when moving mouse down */
 }
 
 .dropdown-toggle {
@@ -139,7 +140,7 @@ body {
 
 .dropdown-menu {
   position: absolute;
-  top: 120%;
+  top: 100%;
   right: 0;
   min-width: 220px;
   background: #ffffff;
@@ -152,6 +153,13 @@ body {
   z-index: 30;
 }
 
+/* Keep menu open when hovering OR focusing */
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu,
+.nav-dropdown.open .dropdown-menu {
+  display: block;
+}
+
 .dropdown-menu li a {
   display: block;
   padding: 8px 14px;
@@ -162,15 +170,6 @@ body {
 
 .dropdown-menu li a:hover {
   background: var(--light-bg);
-}
-
-.nav-dropdown:hover .dropdown-menu,
-.nav-dropdown:focus-within .dropdown-menu {
-  display: block;
-}
-
-.nav-dropdown.open .dropdown-menu {
-  display: block;
 }
 
 /* ================================
