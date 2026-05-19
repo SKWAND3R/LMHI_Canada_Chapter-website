@@ -242,6 +242,49 @@ body {
   transform: translateY(-1px);
 }
 
+/* Rotating Toronto Skyline Slider */
+
+.hero-slider {
+  position: relative;
+  height: var(--hero-height);
+  overflow: hidden;
+}
+
+.hero-slider .slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 67, 104, 0.85),
+    rgba(0, 91, 143, 0.7)
+  );
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: var(--max-width);
+  padding: 0 40px;
+  color: white;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* Highlights */
 
 .highlights {
