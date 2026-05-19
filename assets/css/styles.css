@@ -446,7 +446,6 @@ body {
 }
 
 .timeline-item img {
-.timeline-item img {
   width: 100%;
   height: auto;          /* keeps natural proportions */
   object-fit: contain;   /* shows the full image */
