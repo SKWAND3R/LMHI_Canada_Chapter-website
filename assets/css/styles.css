@@ -87,11 +87,6 @@ body {
   flex-direction: column;
 }
 
-.logo-title {
-  font-weight: 700;
-  font-size: 1.05rem;
-}
-
 .logo-subtitle {
   font-size: 0.8rem;
   color: var(--text-muted);
