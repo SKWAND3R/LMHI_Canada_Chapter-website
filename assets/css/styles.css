@@ -326,12 +326,13 @@ body {
 }
 
 .timeline-item img {
-  width: 100%;              /* full width again */
-  height: 220px;            /* consistent height */
-  object-fit: cover;        /* fills the card without distortion */
+  width: 100%;
+  max-height: 260px;      /* controls size without cropping */
+  object-fit: contain;    /* shows the entire image */
   border-radius: var(--radius);
   margin-bottom: 12px;
   box-shadow: var(--shadow-soft);
+  background: #f5f5f5;    /* fills empty space if aspect ratio differs */
 }
 
 /* Mission & Vision */
