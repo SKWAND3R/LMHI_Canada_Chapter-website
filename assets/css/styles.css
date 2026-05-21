@@ -48,6 +48,13 @@ body {
   text-decoration: underline;
 }
 
+.logo-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem; /* adjust as needed */
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
 /* Main navigation */
 .main-nav {
   display: flex;
