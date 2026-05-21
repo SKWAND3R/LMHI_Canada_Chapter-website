@@ -390,21 +390,31 @@ body {
   margin-bottom: 16px;
 }
 
-/* MOBILE NAV FIX */
+/* ============================
+   MOBILE NAVIGATION FIX
+   ============================ */
 @media (max-width: 768px) {
 
+  /* Reduce padding so nav fits */
   .main-nav {
+    padding: 10px 16px;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 15px;
+    gap: 12px;
   }
 
+  /* Shrink logo on mobile */
+  .logo-image img {
+    height: 60px;
+  }
+
+  /* Allow nav links to wrap and stack */
   .nav-links {
-    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    gap: 12px;
-    white-space: normal; /* allow wrapping on mobile */
+    gap: 10px;
+    white-space: normal; /* IMPORTANT */
   }
 
   .nav-links li {
@@ -413,15 +423,17 @@ body {
 
   .nav-links a,
   .dropdown-toggle {
-    display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
+    text-align: left;
   }
 
-  .nav-dropdown .dropdown-menu {
+  /* Dropdown menu behaves properly on mobile */
+  .dropdown-menu {
     position: static;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 6px;
+    box-shadow: none;
+    border: 1px solid #e1e4ea;
   }
 }
-
