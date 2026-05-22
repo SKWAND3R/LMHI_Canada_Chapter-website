@@ -48,7 +48,7 @@ body {
   text-decoration: underline;
 }
 
-/* LOGO TITLE — FIXED (only one definition) */
+/* LOGO TITLE */
 .logo-title {
   font-family: 'Dancing Script', cursive !important;
   font-size: 3.4rem;
@@ -286,7 +286,10 @@ body {
   text-align: center;
 }
 
-/* CONTACT PAGE — MATCH THE SCREENSHOT */
+/* ============================
+   CONTACT PAGE — EXACT MATCH
+   ============================ */
+
 .contact-page {
   max-width: 900px;
   margin: 60px auto;
@@ -300,12 +303,12 @@ body {
 }
 
 .contact-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 50px; /* spacing between form + info */
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 50px !important;
 }
 
-/* FORM SECTION */
+/* FORM */
 .contact-form h2 {
   margin-bottom: 20px;
 }
@@ -341,7 +344,7 @@ body {
   background: var(--primary-dark);
 }
 
-/* CONTACT INFO SECTION */
+/* CONTACT INFO */
 .contact-info h2 {
   margin-bottom: 20px;
 }
@@ -423,7 +426,9 @@ body {
   margin-bottom: 16px;
 }
 
-/* MOBILE NAV FIX */
+/* ============================
+   MOBILE NAVIGATION FIX
+   ============================ */
 @media (max-width: 768px) {
 
   .main-nav {
