@@ -248,26 +248,33 @@ body {
   transform: translateY(-1px);
 }
 
-/* NEW — Learn More button between hero and highlights */
 .learn-more-wrapper {
   text-align: center;
   margin: 30px 0 10px;
+  position: relative;
 }
 
+/* Orange bubble + slight right shift */
 .learn-more-small {
   display: inline-block;
-  padding: 10px 22px;
-  background: var(--primary);
-  color: #fff;
-  font-size: 0.9rem;
+  padding: 12px 26px;
+  background: var(--accent); /* orange bubble */
+  color: #3b2a00;
+  font-size: 0.95rem;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 999px; /* full bubble */
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+
+  /* slight right shift */
+  transform: translateX(12px);
 }
 
 .learn-more-small:hover {
-  background: #003d5c;
+  background: #ffb63a;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+  transform: translateX(12px) translateY(-2px);
 }
 
 /* Highlights */
