@@ -110,15 +110,25 @@ body {
   color: var(--primary);
 }
 
-.nav-links li {
+/*.nav-links li {
   display: flex;
   align-items: center;
+} */
+
+/* Fix vertical alignment of nav items */
+.nav-links li,
+.nav-links a,
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 /* Dropdown */
 .nav-dropdown {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .dropdown-toggle {
