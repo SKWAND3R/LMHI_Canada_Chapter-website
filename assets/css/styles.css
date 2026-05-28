@@ -533,16 +533,17 @@ body {
   .logo-title {
     font-size: 2rem;
   }
-  
+}
+
 /* ============================
-   GET INVOLVED PAGE STUFF
+   GET INVOLVED PAGE STYLES
    ============================ */
-  
-  .contribution-highlight {
-  border: 2px solid #cc0000;
+
+.contribution-highlight {
+  border: 2px solid var(--accent);
   padding: 22px 24px;
   border-radius: 8px;
-  background: #fff5f5;
+  background: rgba(244, 166, 35, 0.12); /* soft orange tint */
   margin-top: 25px;
 }
 
@@ -550,7 +551,5 @@ body {
   margin-top: 18px;
   font-size: 1rem;
   font-weight: 600;
-  color: #a00000;
-}
-
+  color: #a05a00;
 }
