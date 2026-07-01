@@ -1,31 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
+  /* YEAR IN FOOTER */
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
-});
 
-// Toronto Skyline Slider
-let currentSlide = 0;
-const slides = document.querySelectorAll(".hero-slider .slide");
+  /* TORONTO SKYLINE SLIDER */
+  const slides = document.querySelectorAll(".hero-slider .slide");
+  let currentSlide = 0;
 
-function rotateSlides() {
-  slides[currentSlide].classList.remove("active");
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add("active");
-}
+  if (slides.length > 0) {
+    setInterval(() => {
+      slides[currentSlide].classList.remove("active");
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add("active");
+    }, 5000);
+  }
 
-setInterval(rotateSlides, 5000); // 5 seconds per slide
-
-// About Us Dropdown Toggle
-document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-  toggle.addEventListener('click', () => {
-    toggle.parentElement.classList.toggle('open');
+  /* ABOUT US DROPDOWN */
+  document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      toggle.parentElement.classList.toggle("open");
+    });
   });
-});
 
-// Contribute Button
-document.getElementById("contributeButton").onclick = () => {
-  document.getElementById("paymentForm").style.display = "block";
-  document.getElementById("paymentForm").scrollIntoView({ behavior: "smooth" });
-};
+  /* CONTRIBUTE BUTTON (only runs if paymentForm exists) */
+  const contributeBtn = document.getElementById("contributeButton");
+  const paymentForm = document.getElementById("paymentForm");
+
+  if (contributeBtn && paymentForm) {
+    contributeBtn.addEventListener("click", () => {
+      paymentForm.style.display = "block";
+      paymentForm.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+});
