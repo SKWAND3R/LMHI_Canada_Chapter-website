@@ -24,3 +24,8 @@ document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
   });
 });
 
+// Contribute Button
+document.getElementById("contributeButton").onclick = () => {
+  document.getElementById("paymentForm").scrollIntoView({ behavior: "smooth" });
+  document.getElementById("paymentForm").style.display = "block";
+};
