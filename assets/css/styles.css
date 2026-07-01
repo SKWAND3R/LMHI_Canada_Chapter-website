@@ -330,21 +330,21 @@ body {
 }
 
 .contribute-now-btn {
-  background-color: #d4af37;
+  background-color: #d4af37;        /* LMHI gold */
   color: white;
-  padding: 16px 36px;
-  border-radius: 10px;
-  font-size: 1.35rem;
-  font-weight: 700;
+  padding: 14px 32px;               /* balanced size */
+  border-radius: 8px;               /* soft corners */
+  font-size: 1.2rem;
+  font-weight: 600;
   text-decoration: none;
   display: inline-block;
-  animation: pulseGlow 2.2s infinite;
+  border: 2px solid #c19b2f;        /* subtle standout border */
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 0px rgba(212,175,55,0.6); }
-  50% { box-shadow: 0 0 18px rgba(212,175,55,0.9); }
-  100% { box-shadow: 0 0 0px rgba(212,175,55,0.6); }
+.contribute-now-btn:hover {
+  background-color: #c19b2f;        /* darker gold on hover */
+  transform: translateY(-2px);      /* gentle lift */
 }
 
 /* ============================
