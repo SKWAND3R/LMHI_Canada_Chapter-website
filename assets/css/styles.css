@@ -553,3 +553,19 @@ body {
   font-weight: 600;
   color: #a05a00;
 }
+/* ============================
+   Front Page Contribute
+   ============================ */
+.contribute-btn {
+  background-color: #d4af37;
+  padding: 6px 14px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contribute-btn:hover {
+  background-color: #c19b2f;
+}
+
