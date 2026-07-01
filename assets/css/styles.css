@@ -332,17 +332,20 @@ body {
 .contribute-now-btn {
   background-color: #d4af37;
   color: white;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 1.2rem;
-  font-weight: 600;
+  padding: 16px 36px;
+  border-radius: 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
   text-decoration: none;
   display: inline-block;
-  transition: var(--transition);
+  border: 3px solid #fff;
+  box-shadow: 0 0 14px rgba(212,175,55,0.8); /* glowing border */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .contribute-now-btn:hover {
-  background-color: #c19b2f;
+  box-shadow: 0 0 22px rgba(212,175,55,1);
+  transform: translateY(-3px);
 }
 
 /* ============================
