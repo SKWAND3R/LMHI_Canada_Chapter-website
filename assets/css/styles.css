@@ -338,14 +338,13 @@ body {
   font-weight: 700;
   text-decoration: none;
   display: inline-block;
-  border: 3px solid #fff;
-  box-shadow: 0 0 14px rgba(212,175,55,0.8); /* glowing border */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: pulseGlow 2.2s infinite;
 }
 
-.contribute-now-btn:hover {
-  box-shadow: 0 0 22px rgba(212,175,55,1);
-  transform: translateY(-3px);
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0px rgba(212,175,55,0.6); }
+  50% { box-shadow: 0 0 18px rgba(212,175,55,0.9); }
+  100% { box-shadow: 0 0 0px rgba(212,175,55,0.6); }
 }
 
 /* ============================
