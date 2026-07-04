@@ -315,24 +315,114 @@ body {
 }
 
 /* ============================
-   CONTACT PAGE
+   CONTACT PAGE — IMPROVED
    ============================ */
+
 .contact-page {
   max-width: var(--max-width);
   margin: 60px auto;
   padding: 0 40px;
 }
 
+.contact-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
+  align-items: start;
 }
 
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* FORM */
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid #d6d9de;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* CONTACT INFO */
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.contact-item i {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-top: 4px;
+}
+
+.contact-item strong {
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+.contact-item div {
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 /* ============================
@@ -359,11 +449,13 @@ body {
 
 .timeline-item img {
   width: 100%;
-  max-height: 260px;
-  object-fit: cover;
+  max-height: 320px;        /* keeps images reasonably sized */
+  object-fit: contain;      /* FULL IMAGE ALWAYS VISIBLE */
+  display: block;
+  margin: 0 auto 16px;      /* centers the image */
   border-radius: var(--radius);
+  background: #f5f5f5;      /* fills empty space if aspect ratio differs */
   box-shadow: var(--shadow-soft);
-  margin-bottom: 10px;
 }
 
 /* ============================
