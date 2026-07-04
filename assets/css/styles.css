@@ -315,7 +315,7 @@ body {
 }
 
 /* ============================
-   CONTACT PAGE — IMPROVED
+   CONTACT PAGE — MODERN REDESIGN
    ============================ */
 
 .contact-page {
@@ -324,13 +324,16 @@ body {
   padding: 0 40px;
 }
 
+/* Page Title */
 .contact-page h1 {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 700;
+  color: var(--primary-dark);
 }
 
+/* Two-column layout */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -344,22 +347,31 @@ body {
   }
 }
 
-/* FORM */
+/* LEFT SIDE — FORM CARD */
+.contact-form {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
 .contact-form h2 {
   margin-bottom: 20px;
   font-size: 1.4rem;
   color: var(--primary-dark);
+  font-weight: 700;
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .contact-form label {
   font-weight: 600;
-  margin-bottom: 4px;
+  font-size: 0.95rem;
+  color: var(--text-main);
 }
 
 .contact-form input,
@@ -378,8 +390,9 @@ body {
   outline: none;
 }
 
+/* SEND BUTTON */
 .primary-btn {
-  background: var(--primary);
+  background: #000;
   color: white;
   padding: 12px 20px;
   border-radius: var(--radius);
@@ -391,17 +404,44 @@ body {
 }
 
 .primary-btn:hover {
-  background: var(--primary-dark);
+  background: #333;
   transform: translateY(-2px);
 }
 
-/* CONTACT INFO */
+/* RIGHT SIDE — CONTACT INFO CARD */
+.contact-info {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
 .contact-info h2 {
   margin-bottom: 20px;
   font-size: 1.4rem;
   color: var(--primary-dark);
+  font-weight: 700;
 }
 
+/* Social icons row */
+.contact-social {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.contact-social i {
+  font-size: 1.4rem;
+  color: var(--primary);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.contact-social i:hover {
+  color: var(--primary-dark);
+}
+
+/* Contact info items */
 .contact-item {
   display: flex;
   align-items: flex-start;
