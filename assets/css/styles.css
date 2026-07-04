@@ -22,7 +22,7 @@
 }
 
 body {
-  margin: 20px;
+  margin: 10px;
   font-family: var(--font-main);
   color: var(--text-main);
   background-color: #ffffff;
